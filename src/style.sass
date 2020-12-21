@@ -1,0 +1,97 @@
+$box-size: 300px
+body
+    font-family: 'Dosis', sans-serif
+    background-color: rgba(245, 178, 23,0.4)
+    font-size: 2.2rem
+.content
+    &__box
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        width: $box-size
+        height: $box-size
+        color: white
+        font-size: 1.8rem
+        transition: all 0.8s ease 0s
+    &__translate
+        background-color: rgba(233, 20, 20, 0.4)
+    &__translate:hover
+        transform: translate(300px, 0px)
+    &__scale
+        background-color: rgba(243, 239, 17, 0.4)
+    &__scale:hover
+        transform: scale(-1,-1)
+    &__rotate
+        background-color: rgba(31, 124, 216, 0.4)
+    &__rotate:hover
+        transform: rotate(-180deg)
+    &__skew
+        background-color: rgba(36, 240, 104, 0.4)
+    &__skew:hover
+        transform: skew(-30deg,45deg)
+    &__matrix
+        background-color: rgba(212, 53, 226, 0.4)
+    &__matrix:hover
+        transform: matrix(1, 0.1, 0, 0.5, 50, 50)
+    &__multi
+        background-color: rgba(53, 186, 226, 0.4)
+    &__multi:hover
+        transform: translateX(20px) scaleX(-1) rotate(-30deg)
+    &__transform-origin
+        background-color: rgba(10, 25, 165, 0.4)
+    &__transform-origin:hover
+        transform-origin: top left
+        transform: rotate(-30deg)
+
+    &__wrapper3d
+        width: $box-size
+        height: $box-size
+        background-color: rgba(0, 0, 0, 0.5)
+        perspective-origin: center
+        perspective: 400px
+    &__perspective
+        background-color: rgba(40, 107, 14, 0.4)
+    &__perspective:hover
+        transform: rotateX(30deg)
+        // transform: perspective(400px) rotateX(30deg)
+    &__translate3D
+        background-color: rgba(209, 250, 26, 1)
+    &__translate3D:hover
+        transform: translate3D(20px, 20px, 30px)
+    &__scale3D
+        background-color: rgba(116, 68, 14, 0.4)
+    &__scale3D:hover
+        transform: scale3d(0.5, 0.5, 4)
+    &__rotate3d
+        background-color: rgba(37, 95, 30, 0.4)
+    &__rotate3d:hover
+        transform: rotate3d(1, 1, 1, -30deg)
+    &__matrix3d
+        background-color: rgba(95, 30, 30, 0.4)
+    &__matrix3d:hover
+        // смотри шпаргалку в интернете 16 значений
+    &__multi3d
+        background-color: rgba(37, 95, 30, 0.4)
+    &__multi3d:hover
+        transform: rotate3d(1, 1, 1, -30deg) translate3D(50px, 50px, 50px)
+    &__transform-style-wrapper
+        width: $box-size
+        height: $box-size
+        background-color: rgba(255, 255, 255, 0.1)
+        perspective: 400px
+        transform-style: preserve-3d
+    &__transform-style
+        display: flex
+        text-transform: uppercase
+        justify-content: center
+        align-items: center
+        letter-spacing: 1px
+        text-align: center
+        transition: all 0.8s ease 0s
+        width: $box-size
+        height: $box-size
+        transform: rotateX(0deg)
+        background-color: #7a956b
+    &__transform-style:hover
+        transform: rotateX(50deg)
